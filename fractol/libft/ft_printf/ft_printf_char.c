@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isint.c                                         :+:      :+:    :+:   */
+/*   ft_printf_char.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
+/*   By: urabex <urabex@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/26 20:34:08 by hurabe            #+#    #+#             */
-/*   Updated: 2024/09/28 17:47:10 by hurabe           ###   ########.fr       */
+/*   Created: 2024/05/28 21:16:56 by hurabe            #+#    #+#             */
+/*   Updated: 2024/10/05 17:32:36 by urabex           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/push_swap.h"
+#include "../../include/fractol.h"
 
-int	ft_isint(long num)
+int	ft_printf_char(char c)
 {
-	return (num >= -2147483648 && num <= 2147483647);
+	ft_putchar_fd(c, 1);
+	return (1);
 }

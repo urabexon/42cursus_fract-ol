@@ -1,21 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_printf_nbr.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
+/*   By: urabex <urabex@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/19 15:31:03 by hurabe            #+#    #+#             */
-/*   Updated: 2024/09/28 17:47:27 by hurabe           ###   ########.fr       */
+/*   Created: 2024/05/28 21:17:09 by hurabe            #+#    #+#             */
+/*   Updated: 2024/10/05 17:32:46 by urabex           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/push_swap.h"
+#include "../../include/fractol.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+int	ft_printf_nbr(int n)
 {
-	if (!lst || !new)
-		return ;
-	ft_lstadd_back(lst, new);
-	*lst = (*lst)->pre;
+	char	*num_str;
+	int		len;
+
+	num_str = ft_itoa(n);
+	if (!num_str)
+		return (0);
+	len = ft_strlen(num_str);
+	ft_putstr_fd(num_str, 1);
+	free(num_str);
+	return (len);
 }

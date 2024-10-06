@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isspace.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
+/*   By: urabex <urabex@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/26 20:32:35 by hurabe            #+#    #+#             */
-/*   Updated: 2024/09/28 17:47:16 by hurabe           ###   ########.fr       */
+/*   Created: 2024/04/22 13:07:22 by hurabe            #+#    #+#             */
+/*   Updated: 2024/10/05 17:48:49 by urabex           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/push_swap.h"
+#include "../include/fractol.h"
 
-int	ft_isspace(char c)
+void	ft_putchar_fd(char c, int fd)
 {
-	return ((c >= '\t' && c <= '\r') || c == ' ');
+	write(fd, &c, 1);
 }

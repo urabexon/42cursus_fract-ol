@@ -1,23 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_printf_str.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: urabex <urabex@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/22 13:08:07 by hurabe            #+#    #+#             */
-/*   Updated: 2024/10/05 17:49:02 by urabex           ###   ########.fr       */
+/*   Created: 2024/05/28 21:17:14 by hurabe            #+#    #+#             */
+/*   Updated: 2024/10/05 17:32:53 by urabex           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/fractol.h"
+#include "../../include/fractol.h"
 
-size_t	ft_strlen(const char *s)
+int	ft_printf_str(char *str)
 {
-	size_t	t;
+	if (!str)
+	{
+		write(1, "(null)", 6);
+		return (6);
+	}
+	ft_putstr_fd(str, 1);
+	return (ft_strlen(str));
+}
 
-	t = 0;
-	while (s[t] != '\0')
-		t++;
-	return (t);
+int	ft_putstr_count(char *c)
+{
+	int	n;
+
+	if (!c)
+		return (0);
+	n = ft_strlen(c);
+	ft_putstr_fd(c, 1);
+	return (n);
 }

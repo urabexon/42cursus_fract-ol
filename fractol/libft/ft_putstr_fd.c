@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
+/*   By: urabex <urabex@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:07:36 by hurabe            #+#    #+#             */
-/*   Updated: 2024/09/28 17:48:39 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/10/05 17:48:53 by urabex           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/push_swap.h"
+#include "../include/fractol.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {
