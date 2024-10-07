@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 20:40:20 by hurabe            #+#    #+#             */
-/*   Updated: 2024/10/06 16:14:05 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/10/07 18:18:29 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,5 +117,10 @@ int     check_argv(char *argv);
 void    display_error(void);
 t_vars	initialization(char *str);
 void	close_window(t_vars *env);
+
+// data_set
+void			julia_set(t_vars *vars);
+unsigned int	color(char *command, int count);
+
 
 #endif
