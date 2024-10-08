@@ -6,7 +6,7 @@
 #    By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/24 20:40:23 by hurabe            #+#    #+#              #
-#    Updated: 2024/10/06 16:18:53 by hurabe           ###   ########.fr        #
+#    Updated: 2024/10/07 20:12:39 by hurabe           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ LIBFT_FOLDER			=	fractol/libft
 FT_PRINTF_FOLDER		=	fractol/libft/ft_printf
 FRACTOL_FOLDER			=	fractol/src
 
-FUNCTIONS				=	$(FRACTOL_FOLDER)/fractol.c $(FRACTOL_FOLDER)/data_set.c $(FRACTOL_FOLDER)/handler.c $(FRACTOL_FOLDER)/open_and_close.c \
+FUNCTIONS				=	$(FRACTOL_FOLDER)/main.c $(FRACTOL_FOLDER)/data_set.c $(FRACTOL_FOLDER)/handler.c $(FRACTOL_FOLDER)/open_and_close.c \
 							$(FRACTOL_FOLDER)/mathematics_part.c $(LIBFT_FOLDER)/ft_itoa.c $(LIBFT_FOLDER)/ft_putchar_fd.c $(LIBFT_FOLDER)/ft_putstr_fd.c $(LIBFT_FOLDER)/ft_strlen.c \
 							$(FT_PRINTF_FOLDER)/ft_printf.c $(FT_PRINTF_FOLDER)/ft_printf_char.c $(FT_PRINTF_FOLDER)/ft_printf_str.c $(FT_PRINTF_FOLDER)/ft_printf_pointer.c $(FT_PRINTF_FOLDER)/ft_printf_nbr.c \
 							$(FT_PRINTF_FOLDER)/ft_printf_nbr_unsigned.c $(FT_PRINTF_FOLDER)/ft_printf_hex.c 
